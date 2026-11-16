@@ -7,7 +7,7 @@ Text-to-music with Stable Audio Open:
 3. Generation and evaluation with FAD, KL, CLAP and MQAScore.
 4. Improved generation, using APG, a guidance interval, composable guidance, prompt engineering and a negative prompt.
 
-The submitted samples use **CFG, w = 10, seed 0, 100 steps**.
+The submitted samples use **CFG, w = 10, seed 0, 100 steps**. They are in `generated_samples/`: `{id}.wav` is the clip for caption `id` in `test.csv`.
 
 ## Setup
 
