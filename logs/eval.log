@@ -1,0 +1,41 @@
+﻿python.exe : W1115 15:45:15.749000 40056 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE:
+ Redirects are currently not supported in Windows or MacOs.
+At C:\Users\toby\115-1\music\hw3\sample_code\run_queue.ps1:23 char:1
++ & $py run_eval.py ..\gen\cfg7 ..\gen\cfg4 ..\gen\cfg10 ..\gen\apg10 . ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (W1115 15:45:15....ndows or MacOs.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[INFO    ]: GT cache path: C:\Users\toby\115-1\music\hw3\eval\gt\cache
+[INFO    ]: Pred cache: C:\Users\toby\115-1\music\hw3\gen\cfg7\cache
+[INFO    ]: Audio length: 10.0
+[INFO    ]: Unpaired: False
+[INFO    ]: Extracting pred cache...
+[INFO    ]: Pred audio path: C:\Users\toby\115-1\music\hw3\gen\cfg7
+[INFO    ]: 100 audios found in C:\Users\toby\115-1\music\hw3\gen\cfg7
+Using cache found in C:\Users\toby/.cache\torch\hub\harritaylor_torchvggish_master
+[INFO    ]: Loading HTSAT-base model config.
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/revision/main "HTTP/1.1 307 Temporary Redi
+rect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/revision/main "HTTP/1.1 200 OK"
+Warning: FMAX is None setting to 15000 
+
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]
+Loading weights:  14%|█▎        | 27/197 [00:00<00:00, 262.37it/s]
+Loading weights:  39%|███▊      | 76/197 [00:00<00:00, 386.06it/s]
+Loading weights:  58%|█████▊    | 115/197 [00:00<00:00, 366.11it/s]
+Loading weights: 100%|██████████| 197/197 [00:00<00:00, 609.77it/s]
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/revision/main "HTTP/1.1 307 Temporary Redi
+rect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/revision/main "HTTP/1.1 200 OK"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/tree/main/additional_chat_templates?recurs
+ive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/tree/main/additional_chat_templ
+ates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/tree/main?recursive=true&expand=false "HTT
+P/1.1 307 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/tree/main?recursive=true&expand
+=false "HTTP/1.1 200 OK"
+[INFO    ]: Load the specified checkpoint C:\Users\toby\115-1\music\hw3\av-benchmark\weights\music_audioset_epoch_15_es
+c_90.14.pt from users.
+[INFO    ]: Load Checkpoint...

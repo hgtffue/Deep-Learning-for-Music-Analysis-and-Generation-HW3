@@ -1,0 +1,319 @@
+﻿python.exe : W1116 01:36:13.586000 8640 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: 
+Redirects are currently not supported in Windows or MacOs.
+At C:\Users\toby\115-1\music\hw3\sample_code\run_queue3.ps1:25 char:1
++ & $py mqascore.py ..\eval\gt ..\gen\cfg10 --shuffle *> ..\mqa_shuffle ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (W1116 01:36:13....ndows or MacOs.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+W1116 01:36:17.226000 8640 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work 
+for triton kernels
+
+Loading weights:   0%|          | 0/876 [00:00<?, ?it/s]
+Loading weights:   1%|▏         | 11/876 [00:00<00:09, 94.89it/s]
+Loading weights:   5%|▍         | 41/876 [00:00<00:04, 198.99it/s]
+Loading weights:   8%|▊         | 71/876 [00:00<00:03, 231.93it/s]
+Loading weights:  12%|█▏        | 108/876 [00:00<00:02, 280.77it/s]
+Loading weights:  16%|█▌        | 140/876 [00:00<00:02, 291.74it/s]
+Loading weights:  19%|█▉        | 170/876 [00:00<00:02, 288.21it/s]
+Loading weights:  23%|██▎       | 204/876 [00:00<00:02, 291.20it/s]
+Loading weights:  27%|██▋       | 236/876 [00:00<00:02, 290.25it/s]
+Loading weights:  31%|███       | 269/876 [00:00<00:02, 299.70it/s]
+Loading weights:  34%|███▍      | 300/876 [00:01<00:01, 297.92it/s]
+Loading weights:  38%|███▊      | 331/876 [00:01<00:01, 298.92it/s]
+Loading weights:  41%|████▏     | 363/876 [00:01<00:01, 303.14it/s]
+Loading weights:  46%|████▌     | 399/876 [00:01<00:01, 308.03it/s]
+Loading weights:  49%|████▉     | 431/876 [00:01<00:01, 301.19it/s]
+Loading weights:  53%|█████▎    | 462/876 [00:01<00:01, 279.24it/s]
+Loading weights:  56%|█████▌    | 491/876 [00:05<00:15, 25.20it/s] 
+Loading weights:  58%|█████▊    | 511/876 [00:06<00:14, 25.24it/s]
+Loading weights:  60%|██████    | 526/876 [00:06<00:13, 25.81it/s]
+Loading weights:  61%|██████▏   | 538/876 [00:07<00:13, 25.56it/s]
+Loading weights:  62%|██████▏   | 547/876 [00:07<00:13, 24.37it/s]
+Loading weights:  63%|██████▎   | 554/876 [00:08<00:13, 23.58it/s]
+Loading weights:  64%|██████▍   | 560/876 [00:08<00:12, 25.73it/s]
+Loading weights:  65%|██████▍   | 566/876 [00:08<00:13, 22.29it/s]
+Loading weights:  65%|██████▌   | 571/876 [00:08<00:12, 24.27it/s]
+Loading weights:  66%|██████▌   | 576/876 [00:09<00:13, 21.98it/s]
+Loading weights:  66%|██████▌   | 580/876 [00:09<00:13, 22.34it/s]
+Loading weights:  67%|██████▋   | 585/876 [00:09<00:11, 25.39it/s]
+Loading weights:  67%|██████▋   | 589/876 [00:09<00:15, 18.61it/s]
+Loading weights:  68%|██████▊   | 593/876 [00:09<00:13, 21.22it/s]
+Loading weights:  68%|██████▊   | 599/876 [00:10<00:12, 22.01it/s]
+Loading weights:  69%|██████▊   | 602/876 [00:10<00:15, 17.60it/s]
+Loading weights:  69%|██████▉   | 605/876 [00:10<00:14, 19.32it/s]
+Loading weights:  70%|██████▉   | 611/876 [00:10<00:12, 20.94it/s]
+Loading weights:  70%|███████   | 614/876 [00:11<00:15, 16.59it/s]
+Loading weights:  70%|███████   | 617/876 [00:11<00:14, 18.42it/s]
+Loading weights:  71%|███████   | 623/876 [00:11<00:12, 20.15it/s]
+Loading weights:  71%|███████▏  | 626/876 [00:11<00:15, 16.50it/s]
+Loading weights:  72%|███████▏  | 630/876 [00:11<00:12, 19.99it/s]
+Loading weights:  72%|███████▏  | 635/876 [00:12<00:11, 20.18it/s]
+Loading weights:  73%|███████▎  | 638/876 [00:12<00:14, 16.34it/s]
+Loading weights:  73%|███████▎  | 641/876 [00:12<00:12, 18.27it/s]
+Loading weights:  74%|███████▎  | 645/876 [00:12<00:10, 22.09it/s]
+Loading weights:  74%|███████▍  | 648/876 [00:12<00:13, 16.47it/s]
+Loading weights:  74%|███████▍  | 651/876 [00:13<00:13, 16.36it/s]
+Loading weights:  75%|███████▍  | 654/876 [00:13<00:12, 17.85it/s]
+Loading weights:  75%|███████▌  | 659/876 [00:13<00:11, 18.60it/s]
+Loading weights:  76%|███████▌  | 662/876 [00:13<00:13, 15.34it/s]
+Loading weights:  76%|███████▌  | 667/876 [00:13<00:10, 19.46it/s]
+Loading weights:  77%|███████▋  | 671/876 [00:14<00:10, 19.42it/s]
+Loading weights:  77%|███████▋  | 674/876 [00:14<00:12, 15.83it/s]
+Loading weights:  77%|███████▋  | 677/876 [00:14<00:11, 17.95it/s]
+Loading weights:  78%|███████▊  | 683/876 [00:14<00:09, 20.00it/s]
+Loading weights:  78%|███████▊  | 686/876 [00:15<00:12, 15.54it/s]
+Loading weights:  79%|███████▊  | 689/876 [00:15<00:10, 17.11it/s]
+Loading weights:  79%|███████▉  | 693/876 [00:15<00:08, 20.95it/s]
+Loading weights:  79%|███████▉  | 696/876 [00:15<00:11, 15.87it/s]
+Loading weights:  80%|███████▉  | 699/876 [00:15<00:10, 16.73it/s]
+Loading weights:  80%|████████  | 702/876 [00:15<00:09, 18.93it/s]
+Loading weights:  80%|████████  | 705/876 [00:16<00:08, 21.08it/s]
+Loading weights:  81%|████████  | 708/876 [00:16<00:11, 14.38it/s]
+Loading weights:  81%|████████  | 710/876 [00:16<00:11, 14.14it/s]
+Loading weights:  81%|████████▏ | 713/876 [00:16<00:09, 16.87it/s]
+Loading weights:  82%|████████▏ | 717/876 [00:16<00:07, 21.53it/s]
+Loading weights:  82%|████████▏ | 720/876 [00:17<00:10, 15.24it/s]
+Loading weights:  83%|████████▎ | 723/876 [00:17<00:09, 15.87it/s]
+Loading weights:  83%|████████▎ | 726/876 [00:17<00:08, 18.25it/s]
+Loading weights:  83%|████████▎ | 731/876 [00:17<00:07, 18.93it/s]
+Loading weights:  84%|████████▍ | 734/876 [00:17<00:09, 15.21it/s]
+Loading weights:  84%|████████▍ | 737/876 [00:18<00:07, 17.44it/s]
+Loading weights:  85%|████████▍ | 743/876 [00:18<00:06, 19.31it/s]
+Loading weights:  85%|████████▌ | 746/876 [00:18<00:08, 15.92it/s]
+Loading weights:  86%|████████▌ | 749/876 [00:18<00:07, 17.81it/s]
+Loading weights:  86%|████████▌ | 755/876 [00:18<00:06, 20.00it/s]
+Loading weights:  87%|████████▋ | 758/876 [00:19<00:07, 15.61it/s]
+Loading weights:  87%|████████▋ | 763/876 [00:19<00:05, 19.42it/s]
+Loading weights:  88%|████████▊ | 767/876 [00:19<00:05, 19.41it/s]
+Loading weights:  88%|████████▊ | 770/876 [00:19<00:06, 15.81it/s]
+Loading weights:  88%|████████▊ | 773/876 [00:20<00:05, 17.94it/s]
+Loading weights:  89%|████████▉ | 779/876 [00:20<00:04, 20.03it/s]
+Loading weights:  89%|████████▉ | 782/876 [00:20<00:05, 16.35it/s]
+Loading weights:  90%|████████▉ | 786/876 [00:20<00:04, 19.93it/s]
+Loading weights:  90%|█████████ | 791/876 [00:20<00:04, 19.05it/s]
+Loading weights:  91%|█████████ | 794/876 [00:21<00:05, 15.92it/s]
+Loading weights:  91%|█████████ | 797/876 [00:21<00:04, 18.02it/s]
+Loading weights:  92%|█████████▏| 803/876 [00:21<00:03, 20.04it/s]
+Loading weights:  92%|█████████▏| 806/876 [00:21<00:04, 15.58it/s]
+Loading weights:  92%|█████████▏| 809/876 [00:22<00:04, 16.59it/s]
+Loading weights:  93%|█████████▎| 815/876 [00:22<00:03, 19.04it/s]
+Loading weights:  93%|█████████▎| 818/876 [00:22<00:03, 15.97it/s]
+Loading weights:  94%|█████████▎| 821/876 [00:22<00:03, 17.99it/s]
+Loading weights:  94%|█████████▍| 827/876 [00:23<00:02, 19.96it/s]
+Loading weights:  95%|█████████▍| 830/876 [00:23<00:02, 15.98it/s]
+Loading weights:  95%|█████████▌| 833/876 [00:23<00:02, 17.78it/s]
+Loading weights:  96%|█████████▌| 839/876 [00:23<00:01, 19.81it/s]
+Loading weights:  96%|█████████▌| 842/876 [00:24<00:02, 15.58it/s]
+Loading weights:  96%|█████████▋| 845/876 [00:24<00:01, 17.45it/s]
+Loading weights:  97%|█████████▋| 851/876 [00:24<00:01, 19.63it/s]
+Loading weights:  97%|█████████▋| 854/876 [00:24<00:01, 16.30it/s]
+Loading weights:  98%|█████████▊| 857/876 [00:24<00:01, 18.14it/s]
+Loading weights:  99%|█████████▊| 863/876 [00:25<00:00, 20.44it/s]
+Loading weights:  99%|█████████▉| 866/876 [00:25<00:00, 16.78it/s]
+Loading weights:  99%|█████████▉| 871/876 [00:25<00:00, 20.53it/s]
+Loading weights: 100%|██████████| 876/876 [00:25<00:00, 34.33it/s]
+
+gt 1/100
+gt 2/100
+gt 3/100
+gt 4/100
+gt 5/100
+gt 6/100
+gt 7/100
+gt 8/100
+gt 9/100
+gt 10/100
+gt 11/100
+gt 12/100
+gt 13/100
+gt 14/100
+gt 15/100
+gt 16/100
+gt 17/100
+gt 18/100
+gt 19/100
+gt 20/100
+gt 21/100
+gt 22/100
+gt 23/100
+gt 24/100
+gt 25/100
+gt 26/100
+gt 27/100
+gt 28/100
+gt 29/100
+gt 30/100
+gt 31/100
+gt 32/100
+gt 33/100
+gt 34/100
+gt 35/100
+gt 36/100
+gt 37/100
+gt 38/100
+gt 39/100
+gt 40/100
+gt 41/100
+gt 42/100
+gt 43/100
+gt 44/100
+gt 45/100
+gt 46/100
+gt 47/100
+gt 48/100
+gt 49/100
+gt 50/100
+gt 51/100
+gt 52/100
+gt 53/100
+gt 54/100
+gt 55/100
+gt 56/100
+gt 57/100
+gt 58/100
+gt 59/100
+gt 60/100
+gt 61/100
+gt 62/100
+gt 63/100
+gt 64/100
+gt 65/100
+gt 66/100
+gt 67/100
+gt 68/100
+gt 69/100
+gt 70/100
+gt 71/100
+gt 72/100
+gt 73/100
+gt 74/100
+gt 75/100
+gt 76/100
+gt 77/100
+gt 78/100
+gt 79/100
+gt 80/100
+gt 81/100
+gt 82/100
+gt 83/100
+gt 84/100
+gt 85/100
+gt 86/100
+gt 87/100
+gt 88/100
+gt 89/100
+gt 90/100
+gt 91/100
+gt 92/100
+gt 93/100
+gt 94/100
+gt 95/100
+gt 96/100
+gt 97/100
+gt 98/100
+gt 99/100
+gt 100/100
+{'run': 'gt_shuffled', 'mqascore': 0.453706830739975, 'global': 0.5873103141784668, 'genre': 0.3642854690551758, 'instrument': 0.3820692300796509, 'mood': 0.5921930074691772}
+
+cfg10 1/100
+cfg10 2/100
+cfg10 3/100
+cfg10 4/100
+cfg10 5/100
+cfg10 6/100
+cfg10 7/100
+cfg10 8/100
+cfg10 9/100
+cfg10 10/100
+cfg10 11/100
+cfg10 12/100
+cfg10 13/100
+cfg10 14/100
+cfg10 15/100
+cfg10 16/100
+cfg10 17/100
+cfg10 18/100
+cfg10 19/100
+cfg10 20/100
+cfg10 21/100
+cfg10 22/100
+cfg10 23/100
+cfg10 24/100
+cfg10 25/100
+cfg10 26/100
+cfg10 27/100
+cfg10 28/100
+cfg10 29/100
+cfg10 30/100
+cfg10 31/100
+cfg10 32/100
+cfg10 33/100
+cfg10 34/100
+cfg10 35/100
+cfg10 36/100
+cfg10 37/100
+cfg10 38/100
+cfg10 39/100
+cfg10 40/100
+cfg10 41/100
+cfg10 42/100
+cfg10 43/100
+cfg10 44/100
+cfg10 45/100
+cfg10 46/100
+cfg10 47/100
+cfg10 48/100
+cfg10 49/100
+cfg10 50/100
+cfg10 51/100
+cfg10 52/100
+cfg10 53/100
+cfg10 54/100
+cfg10 55/100
+cfg10 56/100
+cfg10 57/100
+cfg10 58/100
+cfg10 59/100
+cfg10 60/100
+cfg10 61/100
+cfg10 62/100
+cfg10 63/100
+cfg10 64/100
+cfg10 65/100
+cfg10 66/100
+cfg10 67/100
+cfg10 68/100
+cfg10 69/100
+cfg10 70/100
+cfg10 71/100
+cfg10 72/100
+cfg10 73/100
+cfg10 74/100
+cfg10 75/100
+cfg10 76/100
+cfg10 77/100
+cfg10 78/100
+cfg10 79/100
+cfg10 80/100
+cfg10 81/100
+cfg10 82/100
+cfg10 83/100
+cfg10 84/100
+cfg10 85/100
+cfg10 86/100
+cfg10 87/100
+cfg10 88/100
+cfg10 89/100
+cfg10 90/100
+cfg10 91/100
+cfg10 92/100
+cfg10 93/100
+cfg10 94/100
+cfg10 95/100
+cfg10 96/100
+cfg10 97/100
+cfg10 98/100
+cfg10 99/100
+cfg10 100/100
+{'run': 'cfg10_shuffled', 'mqascore': 0.47195765376091003, 'global': 0.6528390645980835, 'genre': 0.30132365226745605, 'instrument': 0.4505678117275238, 'mood': 0.610765814781189}

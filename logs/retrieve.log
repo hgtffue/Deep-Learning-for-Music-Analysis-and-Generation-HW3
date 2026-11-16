@@ -1,0 +1,303 @@
+﻿python.exe : W1115 00:38:03.915000 10996 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE:
+ Redirects are currently not supported in Windows or MacOs.
+At line:1 char:432
++ ... ample_code; & "$env:USERPROFILE\miniconda3\envs\deepmir_hw3\python.ex ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (W1115 00:38:03....ndows or MacOs.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and
+ faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TO
+KEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]
+Loading weights:  23%|██▎       | 45/197 [00:00<00:00, 444.01it/s]
+Loading weights:  46%|████▌     | 90/197 [00:00<00:00, 403.86it/s]
+Loading weights: 100%|██████████| 197/197 [00:00<00:00, 849.74it/s]
+[transformers] [1mRobertaModel LOAD REPORT[0m from: roberta-base
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstrea
+m task.
+
+audio 32/5367
+audio 64/5367
+audio 96/5367
+audio 128/5367
+audio 160/5367
+audio 192/5367
+audio 224/5367
+audio 256/5367
+audio 288/5367
+audio 320/5367
+audio 352/5367
+audio 384/5367
+audio 416/5367
+audio 448/5367
+audio 480/5367
+audio 512/5367
+audio 544/5367
+audio 576/5367
+audio 608/5367
+audio 640/5367
+audio 672/5367
+audio 704/5367
+audio 736/5367
+audio 768/5367
+audio 800/5367
+audio 832/5367
+audio 864/5367
+audio 896/5367
+audio 928/5367
+audio 960/5367
+audio 992/5367
+audio 1024/5367
+audio 1056/5367
+audio 1088/5367
+audio 1120/5367
+audio 1152/5367
+audio 1184/5367
+audio 1216/5367
+audio 1248/5367
+audio 1280/5367
+audio 1312/5367
+audio 1344/5367
+audio 1376/5367
+audio 1408/5367
+audio 1440/5367
+audio 1472/5367
+audio 1504/5367
+audio 1536/5367
+audio 1568/5367
+audio 1600/5367
+audio 1632/5367
+audio 1664/5367
+audio 1696/5367
+audio 1728/5367
+audio 1760/5367
+audio 1792/5367
+audio 1824/5367
+audio 1856/5367
+audio 1888/5367
+audio 1920/5367
+audio 1952/5367
+audio 1984/5367
+audio 2016/5367
+audio 2048/5367
+audio 2080/5367
+audio 2112/5367
+audio 2144/5367
+audio 2176/5367
+audio 2208/5367
+audio 2240/5367
+audio 2272/5367
+audio 2304/5367
+audio 2336/5367
+audio 2368/5367
+audio 2400/5367
+audio 2432/5367
+audio 2464/5367
+audio 2496/5367
+audio 2528/5367
+audio 2560/5367
+audio 2592/5367
+audio 2624/5367
+audio 2656/5367
+audio 2688/5367
+audio 2720/5367
+audio 2752/5367
+audio 2784/5367
+audio 2816/5367
+audio 2848/5367
+audio 2880/5367
+audio 2912/5367
+audio 2944/5367
+audio 2976/5367
+audio 3008/5367
+audio 3040/5367
+audio 3072/5367
+audio 3104/5367
+audio 3136/5367
+audio 3168/5367
+audio 3200/5367
+audio 3232/5367
+audio 3264/5367
+audio 3296/5367
+audio 3328/5367
+audio 3360/5367
+audio 3392/5367
+audio 3424/5367
+audio 3456/5367
+audio 3488/5367
+audio 3520/5367
+audio 3552/5367
+audio 3584/5367
+audio 3616/5367
+audio 3648/5367
+audio 3680/5367
+audio 3712/5367
+audio 3744/5367
+audio 3776/5367
+audio 3808/5367
+audio 3840/5367
+audio 3872/5367
+audio 3904/5367
+audio 3936/5367
+audio 3968/5367
+audio 4000/5367
+audio 4032/5367
+audio 4064/5367
+audio 4096/5367
+audio 4128/5367
+audio 4160/5367
+audio 4192/5367
+audio 4224/5367
+audio 4256/5367
+audio 4288/5367
+audio 4320/5367
+audio 4352/5367
+audio 4384/5367
+audio 4416/5367
+audio 4448/5367
+audio 4480/5367
+audio 4512/5367
+audio 4544/5367
+audio 4576/5367
+audio 4608/5367
+audio 4640/5367
+audio 4672/5367
+audio 4704/5367
+audio 4736/5367
+audio 4768/5367
+audio 4800/5367
+audio 4832/5367
+audio 4864/5367
+audio 4896/5367
+audio 4928/5367
+audio 4960/5367
+audio 4992/5367
+audio 5024/5367
+audio 5056/5367
+audio 5088/5367
+audio 5120/5367
+audio 5152/5367
+audio 5184/5367
+audio 5216/5367
+audio 5248/5367
+audio 5280/5367
+audio 5312/5367
+audio 5344/5367
+audio 5367/5367
+ id retrieved_ytid  clap_score
+  0    rgWm0-a0kAo    0.486271
+  1    aIIEI33EUqI    0.483283
+  2    hLn4HokDEmM    0.559884
+  3    RceCfg1FQq4    0.427320
+  4    zyXa2tdBTGc    0.454582
+  5    1QFli7KSXAQ    0.478766
+  6    f8fUFmjqXZo    0.377334
+  7    C8Euv69GR3U    0.456766
+  8    hLn4HokDEmM    0.558096
+  9    7Vjp9y6wvkY    0.454046
+ 10    hrOP9swUpyA    0.424119
+ 11    KV4noVyGHa4    0.452577
+ 12    7k3OZ_fPXuM    0.459129
+ 13    kmZFn-CQ19A    0.483501
+ 14    zwfo7wnXdjs    0.481129
+ 15    hLn4HokDEmM    0.474474
+ 16    hLn4HokDEmM    0.476645
+ 17    WAxDN-FyPn8    0.558408
+ 18    C8Euv69GR3U    0.455892
+ 19    7k3OZ_fPXuM    0.500565
+ 20    7k3OZ_fPXuM    0.508507
+ 21    hLn4HokDEmM    0.499083
+ 22    2CzfBZ1mYBs    0.438160
+ 23    kmZFn-CQ19A    0.417476
+ 24    GJYhDjThTHM    0.501931
+ 25    ABVYSaLu_VM    0.445838
+ 26    7k3OZ_fPXuM    0.493090
+ 27    aIIEI33EUqI    0.437712
+ 28    fsTVRca31nI    0.481521
+ 29    k5kPBsMFlOc    0.444735
+ 30    gsIB8HjsRtw    0.522260
+ 31    AgtY6m-b3Gk    0.430091
+ 32    nP05Sf4Fgac    0.459956
+ 33    7k3OZ_fPXuM    0.456973
+ 34    PyVuHAskeUg    0.430036
+ 35    3NAqH9LYDyU    0.502815
+ 36    ABVYSaLu_VM    0.457789
+ 37    Nuks8XFdGMk    0.477684
+ 38    hLn4HokDEmM    0.513265
+ 39    zGBKakEGSyc    0.411006
+ 40    3ClbaJYWVO4    0.438543
+ 41    hRbukCd6N68    0.388792
+ 42    qVuxCN3JpiM    0.488196
+ 43    dsU3B0W3TMs    0.399325
+ 44    Mwy5Y0S5jfM    0.456883
+ 45    y_toDfeACWE    0.364913
+ 46    OH8urnIthoQ    0.486605
+ 47    6Ig6zwBn4b4    0.492122
+ 48    kmZFn-CQ19A    0.453094
+ 49    WAxDN-FyPn8    0.442738
+ 50    aIIEI33EUqI    0.488908
+ 51    7k3OZ_fPXuM    0.508498
+ 52    qdWTfyysMN8    0.466581
+ 53    6yB6plsrjO0    0.401759
+ 54    6jeq5lP5Up0    0.390314
+ 55    O1EmHJyz5ds    0.468363
+ 56    _VmCPixy9GQ    0.436022
+ 57    r_KdRKquXsM    0.477086
+ 58    xxNroISqkt4    0.367897
+ 59    GJYhDjThTHM    0.516170
+ 60    EC4GbkL3XvI    0.589312
+ 61    t3758pixHZY    0.464143
+ 62    vp6p45b-038    0.354688
+ 63    hrOP9swUpyA    0.408551
+ 64    z_fEIZOv0JY    0.364410
+ 65    TArWNq2retM    0.398000
+ 66    BEEknOFrVdU    0.464924
+ 67    RV05BW-2WIc    0.404957
+ 68    k-J2-Ou1Fm8    0.458984
+ 69    t3758pixHZY    0.496745
+ 70    _wyELLqwF3w    0.457197
+ 71    hoPnrbKOEl8    0.466343
+ 72    gDzi8N3BYMw    0.412158
+ 73    OII3VJoE0WA    0.472802
+ 74    mQWht9mv7sE    0.472750
+ 75    uARzr9CAemI    0.484793
+ 76    kg8FwhL_fqs    0.453342
+ 77    _WYwB1qRgLM    0.447416
+ 78    aupCwPVWsMo    0.420116
+ 79    7k3OZ_fPXuM    0.418065
+ 80    hLn4HokDEmM    0.480209
+ 81    5a_Qxd4ECTo    0.460593
+ 82    hLn4HokDEmM    0.460689
+ 83    mOFyRCMlXIo    0.427544
+ 84    7k3OZ_fPXuM    0.468308
+ 85    HAEoz3VbaP8    0.482069
+ 86    7k3OZ_fPXuM    0.448118
+ 87    7k3OZ_fPXuM    0.470023
+ 88    4M_k01zIbVM    0.446977
+ 89    bVtHAk5w2Z8    0.449637
+ 90    E3iPiZlT6f8    0.448110
+ 91    oUp-acoLyvU    0.450118
+ 92    Vx_vqfpRdUU    0.483515
+ 93    XQB27QPic3k    0.390496
+ 94    BxQSEvHdyjQ    0.478977
+ 95    aIIEI33EUqI    0.561509
+ 96    hLn4HokDEmM    0.535133
+ 97    7k3OZ_fPXuM    0.488278
+ 98    7k3OZ_fPXuM    0.519558
+ 99    E3iPiZlT6f8    0.514542
+mean top-1 CLAP score: 0.4614

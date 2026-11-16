@@ -125,3 +125,5 @@ Notes on the retrieval and evaluation tools:
 | `concepts.csv` | Genre, instrument and mood concepts per caption, used by MQAScore and composable guidance |
 | `prompts_rewritten.csv` | Tag-style rewritten prompts for prompt engineering |
 | `av-benchmark.patch` | Local fixes to av-benchmark |
+| `report/` | Report (`report.md`), all result tables (`tables.md`), CLAP–MQAScore and retrieval failure analysis (`extra.md`) and figures |
+| `logs/` | Logs of every run: `gen_<run>.log` (generation), `eval_<run>.log` (av-benchmark), `mqa_*.log` (MQAScore), `retrieve.log` (retrieval) |

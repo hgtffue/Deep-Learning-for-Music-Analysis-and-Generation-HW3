@@ -1,0 +1,163 @@
+﻿python.exe : W1115 22:28:23.162000 38860 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE:
+ Redirects are currently not supported in Windows or MacOs.
+At C:\Users\toby\115-1\music\hw3\sample_code\run_queue2.ps1:17 char:5
++     & $py run_eval.py "..\gen\$name" *> "..\eval_$name.log"
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (W1115 22:28:23....ndows or MacOs.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[INFO    ]: GT cache path: C:\Users\toby\115-1\music\hw3\eval\gt\cache
+[INFO    ]: Pred cache: C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache
+[INFO    ]: Audio length: 10.0
+[INFO    ]: Unpaired: False
+[INFO    ]: Extracting pred cache...
+[INFO    ]: Pred audio path: C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps
+[INFO    ]: 100 audios found in C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps
+Using cache found in C:\Users\toby/.cache\torch\hub\harritaylor_torchvggish_master
+[INFO    ]: Loading HTSAT-base model config.
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/revision/main "HTTP/1.1 307 Temporary Redi
+rect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/revision/main "HTTP/1.1 200 OK"
+Warning: FMAX is None setting to 15000 
+
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]
+Loading weights:  27%|██▋       | 54/197 [00:00<00:00, 461.19it/s]
+Loading weights:  74%|███████▎  | 145/197 [00:00<00:00, 705.71it/s]
+Loading weights: 100%|██████████| 197/197 [00:00<00:00, 682.85it/s]
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/revision/main "HTTP/1.1 307 Temporary Redi
+rect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/revision/main "HTTP/1.1 200 OK"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/tree/main/additional_chat_templates?recurs
+ive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/tree/main/additional_chat_templ
+ates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/roberta-base/tree/main?recursive=true&expand=false "HTT
+P/1.1 307 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/FacebookAI/roberta-base/tree/main?recursive=true&expand
+=false "HTTP/1.1 200 OK"
+[INFO    ]: Load the specified checkpoint C:\Users\toby\115-1\music\hw3\av-benchmark\weights\music_audioset_epoch_15_es
+c_90.14.pt from users.
+[INFO    ]: Load Checkpoint...
+[INFO    ]: HTTP Request: HEAD https://huggingface.co/microsoft/msclap/resolve/main/CLAP_weights_2023.pth "HTTP/1.1 302
+ Found"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/gpt2 "HTTP/1.1 307 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2 "HTTP/1.1 200 OK"
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights:  16%|█▌        | 24/148 [00:00<00:00, 223.76it/s]
+Loading weights:  51%|█████▏    | 76/148 [00:00<00:00, 388.83it/s]
+Loading weights:  78%|███████▊  | 116/148 [00:00<00:00, 268.91it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 353.55it/s]
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/gpt2 "HTTP/1.1 307 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2 "HTTP/1.1 200 OK"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=fals
+e&expand=false "HTTP/1.1 307 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templat
+es?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 30
+7 Temporary Redirect"
+[INFO    ]: HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=f
+alse "HTTP/1.1 200 OK"
+
+  0%|          | 0/25 [00:00<?, ?it/s]
+  4%|▍         | 1/25 [00:00<00:10,  2.36it/s]
+ 12%|█▏        | 3/25 [00:00<00:03,  5.75it/s]
+ 20%|██        | 5/25 [00:00<00:02,  8.01it/s]
+ 28%|██▊       | 7/25 [00:00<00:01,  9.45it/s]
+ 36%|███▌      | 9/25 [00:01<00:01, 10.42it/s]
+ 44%|████▍     | 11/25 [00:01<00:01, 11.04it/s]
+ 52%|█████▏    | 13/25 [00:01<00:01, 11.43it/s]
+ 60%|██████    | 15/25 [00:01<00:00, 11.68it/s]
+ 68%|██████▊   | 17/25 [00:01<00:00, 11.83it/s]
+ 76%|███████▌  | 19/25 [00:01<00:00, 11.96it/s]
+ 84%|████████▍ | 21/25 [00:02<00:00, 12.25it/s]
+ 92%|█████████▏| 23/25 [00:02<00:00, 12.55it/s]
+100%|██████████| 25/25 [00:02<00:00, 12.85it/s]
+100%|██████████| 25/25 [00:02<00:00, 10.69it/s]
+[INFO    ]: Saving 100 features to C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache\pann_features.pth
+
+  0%|          | 0/25 [00:00<?, ?it/s]
+  8%|▊         | 2/25 [00:00<00:01, 12.20it/s]
+ 16%|█▌        | 4/25 [00:00<00:01, 13.27it/s]
+ 24%|██▍       | 6/25 [00:00<00:01, 13.53it/s]
+ 32%|███▏      | 8/25 [00:00<00:01, 13.46it/s]
+ 40%|████      | 10/25 [00:00<00:01, 13.44it/s]
+ 48%|████▊     | 12/25 [00:00<00:00, 13.46it/s]
+ 56%|█████▌    | 14/25 [00:01<00:00, 13.44it/s]
+ 64%|██████▍   | 16/25 [00:01<00:00, 13.31it/s]
+ 72%|███████▏  | 18/25 [00:01<00:00, 13.13it/s]
+ 80%|████████  | 20/25 [00:01<00:00, 13.11it/s]
+ 88%|████████▊ | 22/25 [00:01<00:00, 13.05it/s]
+ 96%|█████████▌| 24/25 [00:01<00:00, 13.02it/s]
+100%|██████████| 25/25 [00:01<00:00, 13.19it/s]
+[INFO    ]: Saving 100 features to C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache\vggish_features.pth
+
+  0%|          | 0/25 [00:00<?, ?it/s]
+  4%|▍         | 1/25 [00:00<00:05,  4.48it/s]
+ 12%|█▏        | 3/25 [00:00<00:02,  9.33it/s]
+ 20%|██        | 5/25 [00:00<00:01, 12.04it/s]
+ 28%|██▊       | 7/25 [00:00<00:01, 13.56it/s]
+ 36%|███▌      | 9/25 [00:00<00:01, 14.44it/s]
+ 44%|████▍     | 11/25 [00:00<00:00, 15.13it/s]
+ 52%|█████▏    | 13/25 [00:00<00:00, 15.09it/s]
+ 60%|██████    | 15/25 [00:01<00:00, 14.91it/s]
+ 68%|██████▊   | 17/25 [00:01<00:00, 15.42it/s]
+ 76%|███████▌  | 19/25 [00:01<00:00, 15.80it/s]
+ 84%|████████▍ | 21/25 [00:01<00:00, 16.16it/s]
+ 92%|█████████▏| 23/25 [00:01<00:00, 16.43it/s]
+100%|██████████| 25/25 [00:01<00:00, 16.52it/s]
+100%|██████████| 25/25 [00:01<00:00, 14.63it/s]
+[INFO    ]: Saving 100 features to C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache\clap_laion_audio.pth
+[INFO    ]: Saving 100 features to C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache\clap_ms_audio.pth
+
+  0%|          | 0/25 [00:00<?, ?it/s]
+  4%|▍         | 1/25 [00:00<00:05,  4.07it/s]
+  8%|▊         | 2/25 [00:00<00:05,  4.55it/s]
+ 12%|█▏        | 3/25 [00:00<00:04,  4.72it/s]
+ 16%|█▌        | 4/25 [00:00<00:04,  4.80it/s]
+ 20%|██        | 5/25 [00:01<00:04,  4.86it/s]
+ 24%|██▍       | 6/25 [00:01<00:03,  4.90it/s]
+ 28%|██▊       | 7/25 [00:01<00:03,  4.90it/s]
+ 32%|███▏      | 8/25 [00:01<00:03,  4.91it/s]
+ 36%|███▌      | 9/25 [00:01<00:03,  4.92it/s]
+ 40%|████      | 10/25 [00:02<00:03,  4.93it/s]
+ 44%|████▍     | 11/25 [00:02<00:02,  4.87it/s]
+ 48%|████▊     | 12/25 [00:02<00:02,  4.90it/s]
+ 52%|█████▏    | 13/25 [00:02<00:02,  4.92it/s]
+ 56%|█████▌    | 14/25 [00:02<00:02,  4.93it/s]
+ 60%|██████    | 15/25 [00:03<00:02,  4.86it/s]
+ 64%|██████▍   | 16/25 [00:03<00:01,  4.89it/s]
+ 68%|██████▊   | 17/25 [00:03<00:01,  4.92it/s]
+ 72%|███████▏  | 18/25 [00:03<00:01,  4.94it/s]
+ 76%|███████▌  | 19/25 [00:03<00:01,  4.94it/s]
+ 80%|████████  | 20/25 [00:04<00:01,  4.93it/s]
+ 84%|████████▍ | 21/25 [00:04<00:00,  4.93it/s]
+ 88%|████████▊ | 22/25 [00:04<00:00,  4.94it/s]
+ 92%|█████████▏| 23/25 [00:04<00:00,  4.92it/s]
+ 96%|█████████▌| 24/25 [00:04<00:00,  4.92it/s]
+100%|██████████| 25/25 [00:05<00:00,  4.91it/s]
+100%|██████████| 25/25 [00:05<00:00,  4.88it/s]
+[INFO    ]: Saving 100 features to C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache\passt_features_embed.pth
+[INFO    ]: Saving 100 features to C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache\passt_logits.pth
+[INFO    ]: Starting evaluation...
+[INFO    ]: Loading MotionFormer config from C:\Users\toby\115-1\music\hw3\av-benchmark\av_bench\synchformer\divided_22
+4_16x4.yaml
+[INFO    ]: No IB features found, skipping IB-score evaluation
+[INFO    ]: No Synchformer features found, skipping DeSync evaluation
+[INFO    ]: Unpaired LAION CLAP features keys: []
+[INFO    ]: Unpaired MS CLAP features keys: []
+[INFO    ]: Unpaired PASST features keys: []
+[INFO    ]: Unpaired PASST logits keys: []
+[INFO    ]: FD-VGG    : 2.4374265633
+[INFO    ]: FD-PANN   : 43.3237005892
+[INFO    ]: FD-PASST  : 714.4751613030
+[INFO    ]: KL-PANNS-softmax: 1.2324492931
+[INFO    ]: KL-PASST-softmax: 0.8740851879
+[INFO    ]: ISC-PANNS-mean: 1.7254058446
+[INFO    ]: ISC-PANNS-std: 0.1402789953
+[INFO    ]: ISC-PASST-mean: 1.6101409766
+[INFO    ]: ISC-PASST-std: 0.1670095797
+[INFO    ]: LAION-CLAP-Score: 0.3219851255
+[INFO    ]: MS-CLAP-Score: 0.5057511926
+[INFO    ]: Output metrics written to C:\Users\toby\115-1\music\hw3\gen\cfg10_50steps\cache\output_metrics.json
+{'run': 'cfg10_50steps', 'FD-VGG': 2.437426563304495, 'FD-PANN': 43.32370058917853, 'FD-PASST': 714.4751613030253, 'KL-PANNS-softmax': 1.2324492931365967, 'KL-PASST-softmax': 0.8740851879119873, 'LAION-CLAP-Score': 0.321985125541687, 'MS-CLAP-Score': 0.5057511925697327, 'ISC-PANNS-mean': 1.7254058446324696, 'ISC-PASST-mean': 1.610140976557958}
