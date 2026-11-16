@@ -1,0 +1,127 @@
+diff --git a/av_bench/data/audio_dataset.py b/av_bench/data/audio_dataset.py
+index 3c74141..a74930d 100644
+--- a/av_bench/data/audio_dataset.py
++++ b/av_bench/data/audio_dataset.py
+@@ -8,6 +8,13 @@ import torchvision.transforms.v2 as v2
+ from pytorchvideo.data.clip_sampling import ConstantClipsPerVideoSampler
+ from torch.utils.data import Dataset
+ 
++
++def _sf_load(path):
++    """soundfile-based replacement for torchaudio.load (torchaudio>=2.9 needs torchcodec)."""
++    import soundfile as _sf
++    data, sr = _sf.read(str(path), dtype='float32', always_2d=True)
++    return torch.from_numpy(data.T.copy()), sr
++
+ log = logging.getLogger()
+ 
+ 
+@@ -122,7 +129,7 @@ class AudioDataset(Dataset):
+         return len(self.datalist)
+ 
+     def read_from_file(self, audio_file):
+-        waveform, sample_rate = torchaudio.load(audio_file)
++        waveform, sample_rate = _sf_load(audio_file)
+         waveform = waveform.mean(dim=0)  # mono
+         waveform = waveform - waveform.mean()
+ 
+@@ -163,7 +170,7 @@ class ImageBindAudioDataset(Dataset):
+         clip_sampler = ConstantClipsPerVideoSampler(clip_duration=clip_duration,
+                                                     clips_per_video=clips_per_video)
+ 
+-        waveform, sr = torchaudio.load(audio_path)
++        waveform, sr = _sf_load(audio_path)
+         if sample_rate != sr:
+             waveform = torchaudio.functional.resample(waveform, orig_freq=sr, new_freq=sample_rate)
+         all_clips_timepoints = get_clip_timepoints(clip_sampler, waveform.size(1) / sample_rate)
+@@ -205,7 +212,7 @@ class SynchformerAudioDataset(Dataset):
+ 
+     def sample(self, idx: int):
+         filename = self.datalist[idx]
+-        waveform, sr = torchaudio.load(filename)
++        waveform, sr = _sf_load(filename)
+         waveform = waveform.mean(dim=0)
+ 
+         if sr != 16000:
+diff --git a/av_bench/extract.py b/av_bench/extract.py
+index a6dfc9e..1f5574f 100644
+--- a/av_bench/extract.py
++++ b/av_bench/extract.py
+@@ -56,7 +56,7 @@ def extract(audio_path: Path,
+ 
+     log.info(f'{len(audios)} audios found in {audio_path}')
+ 
+-    models = ExtractionModels().to(device).eval()
++    models = ExtractionModels(load_video_models=not skip_video_related).to(device).eval()
+     dataset = AudioDataset(audios, audio_length=audio_length, sr=16000)
+     loader = DataLoader(dataset, batch_size=batch_size, num_workers=num_workers, pin_memory=True)
+ 
+diff --git a/av_bench/extraction_models.py b/av_bench/extraction_models.py
+index 377996a..ceb9404 100644
+--- a/av_bench/extraction_models.py
++++ b/av_bench/extraction_models.py
+@@ -13,13 +13,13 @@ from av_bench.synchformer.synchformer import Synchformer
+ from av_bench.vggish.vggish import VGGish
+ 
+ _clap_ckpt_path = Path(
+-    __file__).parent.parent / 'weights' / 'music_speech_audioset_epoch_15_esc_89.98.pt'
++    __file__).parent.parent / 'weights' / 'music_audioset_epoch_15_esc_90.14.pt'
+ _syncformer_ckpt_path = Path(__file__).parent.parent / 'weights' / 'synchformer_state_dict.pth'
+ 
+ 
+ class ExtractionModels(nn.Module):
+ 
+-    def __init__(self):
++    def __init__(self, load_video_models: bool = True):
+         super().__init__()
+ 
+         features_list = ["2048", "logits"]
+@@ -42,16 +42,18 @@ class ExtractionModels(nn.Module):
+         self.passt_model = get_basic_model(mode="all")
+         self.passt_model.eval()
+ 
+-        self.imagebind = imagebind_model.imagebind_huge(pretrained=True).eval()
++        if load_video_models:
++            self.imagebind = imagebind_model.imagebind_huge(pretrained=True).eval()
+ 
+         self.laion_clap = laion_clap.CLAP_Module(enable_fusion=False, amodel='HTSAT-base').eval()
+         self.laion_clap.load_ckpt(_clap_ckpt_path, verbose=False)
+ 
+         self.ms_clap = CLAP(version='2023', use_cuda=True)
+ 
+-        self.synchformer = Synchformer().eval()
+-        sd = torch.load(_syncformer_ckpt_path, weights_only=True)
+-        self.synchformer.load_state_dict(sd)
++        if load_video_models:
++            self.synchformer = Synchformer().eval()
++            sd = torch.load(_syncformer_ckpt_path, weights_only=True)
++            self.synchformer.load_state_dict(sd)
+ 
+         # from synchformer
+         self.sync_mel_spectrogram = torchaudio.transforms.MelSpectrogram(
+diff --git a/av_bench/vggish/vggish.py b/av_bench/vggish/vggish.py
+index 4f86d77..a0cc225 100644
+--- a/av_bench/vggish/vggish.py
++++ b/av_bench/vggish/vggish.py
+@@ -51,7 +51,7 @@ class VGGish(VGG):
+     def __init__(self, device=None, pretrained=True, preprocess=True, postprocess=True):
+         super().__init__(make_layers())
+         if pretrained:
+-            state_dict = torch.hub.load('harritaylor/torchvggish', 'vggish').state_dict()
++            state_dict = torch.hub.load('harritaylor/torchvggish', 'vggish', trust_repo=True).state_dict()
+             super().load_state_dict(state_dict, strict=False)
+ 
+         if device is None:
+diff --git a/extract_text.py b/extract_text.py
+index 3e418aa..3cc350c 100644
+--- a/extract_text.py
++++ b/extract_text.py
+@@ -10,7 +10,7 @@ from msclap import CLAP
+ from tqdm import tqdm
+ 
+ _clap_ckpt_path = Path(
+-    __file__).parent.parent / 'weights' / 'music_speech_audioset_epoch_15_esc_89.98.pt'
++    __file__).parent / 'weights' / 'music_audioset_epoch_15_esc_90.14.pt'
+ log = logging.getLogger()
+ device = 'cuda'
+ 

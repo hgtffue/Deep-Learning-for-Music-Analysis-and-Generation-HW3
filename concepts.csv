@@ -1,0 +1,101 @@
+id,genre,instruments,mood
+0,rap,drum machine;synth pad;electric guitar,melancholic;reflective
+1,ambient,vibraphone;piano;synth pad,calm;dreamy
+2,club music,bass;snare drum;synth pad,mysterious
+3,retro rock,bass guitar;electric guitar;drum kit;electric piano,nostalgic;laid-back
+4,hip hop,cymbals;electric piano;upright bass,relaxed;calm
+5,alternative rock,acoustic guitar;electric bass;drum kit,upbeat;catchy
+6,noise,Rhodes electric piano;sub-bass;field recordings,chaotic;uneasy
+7,hard rock,strings;electric guitar;bass guitar;drums,mysterious;dark
+8,techno,drums;synth pad;bass,nostalgic;danceable
+9,soundtrack,acoustic guitar;cello;piano,soothing;calm
+10,pop folk,guitar;upright bass;pedal steel guitar,epic;heartfelt
+11,experimental,vibraphone;piano;cello,melancholic;haunting
+12,jazz fusion,synth pad;saxophone;electric piano,relaxed;smooth
+13,folk,drum machine;acoustic guitar;upright bass,warm;heartfelt
+14,folk,acoustic guitar;mandolin;fiddle,peaceful
+15,house,sampler loop;synth pad;bass,eerie;strange
+16,house,Rhodes electric piano;drum machine;bass;synth pad,nostalgic;cinematic
+17,orchestral,strings;piano,dreamy;ethereal
+18,hard rock,drum kit;bass guitar;electric guitar,intense;emotional
+19,ambient,bass;synth pad,catchy;smooth
+20,house,electric guitar;synth pad;drums,warm;beautiful
+21,dance,drums;synth bass;acoustic guitar,energetic;happy
+22,world fusion,guitar;percussion;tabla;synth bass,energetic;celebratory
+23,blues rock,drum machine;electric guitar;acoustic bass;pedal steel guitar,laid-back;nostalgic
+24,orchestral,viola;string section;piano,adventurous;energetic
+25,rock,Rhodes electric piano;drum kit;electric guitar,dramatic;intense
+26,house,viola;electronic drums;synth pad,dreamy;introspective
+27,electronic,Rhodes electric piano;synth pad;arpeggiator,meditative;calm
+28,pop folk,drums;acoustic guitar;upright bass,heartfelt;uplifting
+29,world fusion,drums;acoustic guitar;kalimba,inspiring;uplifting
+30,latin,accordion;conga;timbales,joyful;festive
+31,blues,slide guitar;upright bass;snare drum,uplifting;groovy
+32,rock and roll,electric guitar;drum kit;accordion;upright bass,spooky;playful
+33,techno,percussion;synth pad;electric bass,dreamy;hypnotic
+34,metal,piano;electric guitar;drum kit;electric bass,aggressive;groovy
+35,dancehall,drum machine,energetic;lively
+36,classical,piano;string section;French horn,epic;majestic
+37,drone,drums;cello;sitar,meditative
+38,club music,electric guitar;sub-bass;snare drum;synth pad,mysterious;dark
+39,electronic,piano;synth bass;drum machine,energetic;fast
+40,film score,acoustic guitar,cinematic;quiet
+41,psychedelic,Rhodes electric piano,dreamy
+42,thrash metal,synthesizer;electric guitar;drums,energetic;aggressive
+43,folk rock,vibraphone;acoustic guitar,warm;heartfelt
+44,rock and roll,ukulele,upbeat;joyful
+45,soundtrack,orchestra,magical
+46,garage rock,electric guitar,raw;energetic
+47,EDM,drums;synthesizer,cinematic;tense
+48,folk rock,guitar;orchestra,warm;heartfelt
+49,orchestral,accordion,mysterious
+50,electronic,orchestra,light;bright
+51,electronica,guitar,spacey
+52,eurodance,electric guitar,calm
+53,ambient,strings,dynamic;action
+54,singer-songwriter,percussion,dark;melancholic
+55,electronica,piano,dark
+56,film score,cymbals,dark;tense
+57,classical,orchestra,melodic
+58,soundtrack,accordion,energetic;driving
+59,orchestral,viola,energetic;action
+60,ballad,electric guitar,reflective;subdued
+61,ambient,synthesizer,entertaining
+62,breakbeat,drums,dramatic
+63,pop folk,strings,warm;beautiful
+64,rock and roll,piano,upbeat;party
+65,noise,Hammond organ,epic
+66,hard rock,harmonica,fun;energetic
+67,dance,strings,elegant;beautiful
+68,symphonic,cymbals;orchestra,powerful;intense
+69,psychedelic,synthesizer,calm;dreamy
+70,singer-songwriter,harmonica,optimistic
+71,film score,orchestra,otherworldly
+72,jazz funk,percussion,emotional;groovy
+73,rock and roll,Hammond organ,nostalgic
+74,fusion,synthesizer,entertaining
+75,trance,accordion,dark;melancholic
+76,fusion,ukulele,light;nostalgic
+77,ambient,viola,calm
+78,rock,viola,sci-fi
+79,latin,synthesizer,soft;calm
+80,chiptune,slide guitar,energetic;retro
+81,psychedelic,orchestra,fast;intense
+82,dance pop,Hammond organ,melancholic;nostalgic
+83,thrash metal,vibraphone,aggressive
+84,hip hop,mandolin,calm
+85,world fusion,ukulele,heartfelt;tender
+86,ambient,synth pad,nostalgic;emotional
+87,latin,sampler,warm
+88,funk,sampler,groovy;relaxed
+89,rock and roll,percussion,upbeat
+90,chanson,bass,nostalgic
+91,hip hop,strings,powerful
+92,chanson,bass,dark;somber
+93,breakbeat,electric guitar,mysterious
+94,rock,drum machine,suspenseful
+95,techno,synth pad,serene;spiritual
+96,house,vibraphone,warm
+97,soft rock,sampler,gentle;relaxed
+98,electronic,acoustic guitar,suspenseful
+99,experimental,drums,fantasy

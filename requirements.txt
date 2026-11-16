@@ -1,0 +1,29 @@
+# Python 3.11. Install torch first from the CUDA 12.8 index:
+#   pip install torch==2.11.0 torchaudio==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+torchaudio==2.11.0
+
+# generation
+diffusers==0.41.0
+transformers==5.20.1
+accelerate==1.15.0
+torchsde==0.2.6
+sentencepiece==0.2.2
+huggingface_hub==1.33.0
+
+# audio / data
+soundfile==0.14.0
+librosa==0.11.0
+numpy==2.4.6
+pandas==3.0.6
+
+# retrieval and CLAP score
+laion_clap @ git+https://github.com/hkchengrex/CLAP.git@590b52df03a5e480634b8714135d3534313be860
+
+# MQAScore (Qwen2-Audio-7B-Instruct in 4-bit)
+bitsandbytes==0.50.2
+
+# analysis
+scipy==1.17.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
